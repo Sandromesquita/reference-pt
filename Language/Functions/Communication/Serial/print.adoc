@@ -34,6 +34,14 @@ Você pode passar strings armazenadas na memória flash para a função Serial.p
 Para enviar dados, sem convertê-los para texto ASCII, use link:../write[Serial.write()].
 [%hardbreaks]
 
+Você pode concatenar strings para a função Serial.print() adicionado + entre as strings. Por exemplo:
+
+`Serial.print(“Hello” + “World”)
+
+Você pode concatenar strings também com outros tipos de variáveis para a função Serial.print() adicionado '+(String)var entre as strings. Por exemplo:
+
+`Serial.print(“Hello” + (String)x + “World”)
+Onde x seria por exemplo um número do tipo inteiro e o uso do (String) seria para transformálo no tipo String
 
 [float]
 === Sintaxe
