@@ -84,8 +84,8 @@ void setup() {
 
   // Lê um caractere da flash
   for (byte k = 0; k < strlen_P(mensagem); k++) {
-    meuCHar = pgm_read_byte_near(mensagem + k);
-    Serial.print(meuCHar);
+    meuChar = pgm_read_byte_near(mensagem + k);
+    Serial.print(meuChar);
   }
 
   Serial.println();
